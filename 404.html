@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>404 — Signal Lost</title>
+        <meta name="robots" content="noindex" />
+        <style>
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url("assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+                font-weight: 400 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "JetBrains Mono";
+                src: url("assets/fonts/JetBrainsMono-Bold.woff2") format("woff2");
+                font-weight: 700 900;
+                font-style: normal;
+                font-display: swap;
+            }
+            :root {
+                --bg: #0d0221;
+                --bg-card: #170a35;
+                --text: #f5f0ff;
+                --text-muted: #b19fdb;
+                --border: #3d2168;
+                --accent: #ff2ec4;
+                --accent-2: #00e5ff;
+                --shadow-hard: 8px 8px 0 rgba(61, 33, 104, 0.55);
+                --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
+            * {
+                box-sizing: border-box;
+            }
+            html,
+            body {
+                width: 100%;
+                min-height: 100%;
+                margin: 0;
+                background: var(--bg);
+                color: var(--text);
+                font-family: "JetBrains Mono", "Courier New", monospace;
+                overflow-x: hidden;
+            }
+            body {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 2rem;
+            }
+            body::before {
+                content: "";
+                position: fixed;
+                inset: 0;
+                background: repeating-linear-gradient(45deg, rgba(255, 46, 196, 0.06) 0px, rgba(255, 46, 196, 0.06) 2px, transparent 2px, transparent 8px);
+                pointer-events: none;
+                z-index: 0;
+            }
+            .panel {
+                position: relative;
+                z-index: 1;
+                max-width: 420px;
+                width: 100%;
+                padding: 2.5rem 2rem;
+                background: var(--bg-card);
+                border: 3px solid var(--border);
+                box-shadow: var(--shadow-hard);
+                text-align: center;
+                opacity: 0;
+                transform: translateY(14px) scale(0.97);
+                animation: panel-in 0.5s var(--ease-bounce) both;
+            }
+            @keyframes panel-in {
+                to { opacity: 1; transform: translateY(0) scale(1); }
+            }
+            .code {
+                color: var(--accent);
+                font-weight: 900;
+                font-size: 3.5rem;
+                letter-spacing: -2px;
+                line-height: 1;
+                display: inline-block;
+                animation: code-wobble 2.4s ease-in-out infinite;
+            }
+            @keyframes code-wobble {
+                0%, 100% { transform: rotate(0deg); }
+                25% { transform: rotate(-3deg); }
+                75% { transform: rotate(3deg); }
+            }
+            .status-line {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                margin: 1rem 0 0.5rem;
+                padding: 0.35rem 0.8rem;
+                border: 2px solid var(--border);
+                color: var(--text-muted);
+                font-size: 0.7rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+            .dot {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #ff5544;
+                animation: pulse 1.6s ease-in-out infinite;
+            }
+            @keyframes pulse {
+                0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(255, 85, 68, 0.5); }
+                50% { opacity: 0.6; box-shadow: 0 0 0 4px rgba(255, 85, 68, 0); }
+            }
+            .msg {
+                margin: 1.2rem 0 1.8rem;
+                color: var(--text-muted);
+                font-size: 0.9rem;
+                line-height: 1.5;
+            }
+            .back {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+                padding: 0.75rem 1.5rem;
+                background: var(--bg);
+                border: 2px solid var(--border);
+                color: var(--text);
+                font-weight: bold;
+                text-decoration: none;
+                transition: transform 0.25s var(--ease-bounce), background-color 0.15s ease-out, color 0.15s ease-out;
+            }
+            .back:hover {
+                background: var(--accent);
+                color: var(--bg);
+                border-color: var(--accent);
+                transform: translate(-2px, -2px);
+            }
+            .back:active {
+                transform: scale(0.95);
+            }
+            @media (prefers-reduced-motion: reduce) {
+                *, *::before, *::after {
+                    animation-duration: 0.001ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.001ms !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <div class="code">404</div>
+            <div class="status-line"><span class="dot"></span> SIGNAL LOST</div>
+            <p class="msg">This coordinate doesn't exist on the map. The page you're looking for was moved, renamed, or never existed.</p>
+            <a class="back" href="/">← BACK TO SAFETY</a>
+        </div>
+    </body>
+</html>

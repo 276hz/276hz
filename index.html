@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <title>ItsHerious</title>
+        <meta name="description" content="ItsHerious — just me, making things I'm proud of." />
+        <meta name="keywords" content="itsherious, portfolio, developer, personal website" />
+        <meta name="author" content="ItsHerious" />
+        <meta name="theme-color" content="#ff2ec4" />
+        <meta name="color-scheme" content="dark light" />
+
+        <link rel="icon" id="favicon" href="https://avatars.githubusercontent.com/u/0?v=4" />
+        <link rel="canonical" id="canonicalLink" href="https://itsherious.github.io/" />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="ItsHerious" />
+        <meta property="og:title" id="ogTitle" content="ItsHerious" />
+        <meta property="og:description" id="ogDescription" content="ItsHerious — just me, making things I'm proud of." />
+        <meta property="og:image" id="ogImage" content="https://avatars.githubusercontent.com/u/0?v=4" />
+        <meta property="og:url" id="ogUrl" content="https://itsherious.github.io/" />
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" id="twitterTitle" content="ItsHerious" />
+        <meta name="twitter:description" id="twitterDescription" content="ItsHerious — just me, making things I'm proud of." />
+        <meta name="twitter:image" id="twitterImage" content="https://avatars.githubusercontent.com/u/0?v=4" />
+
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+
+        <script type="application/ld+json" id="ldJson">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "ItsHerious",
+                "url": "https://itsherious.github.io",
+                "description": "ItsHerious — just me, making things I'm proud of."
+            }
+        </script>
+    </head>
+    <body>
+        <a class="skip-link" href="#mainContent">Skip to content</a>
+
+        <div class="bg-decor" aria-hidden="true">
+            <span class="blob blob-1"></span>
+            <span class="blob blob-2"></span>
+            <span class="blob blob-3"></span>
+        </div>
+
+        <div class="cursor-fx" id="cursorFx" aria-hidden="true">
+            <span class="cursor-ring" id="cursorRing"></span>
+            <span class="cursor-dot" id="cursorDot"></span>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <button class="menu-trigger" id="menuTrigger" aria-expanded="false" aria-controls="nav">
+                    <span class="menu-icon"><i class="ri-menu-line"></i></span>
+                    <span class="menu-text">MENU</span>
+                </button>
+
+                <div class="header-right">
+                    <button class="theme-trigger" id="themeTrigger" aria-label="Toggle color theme" title="Toggle theme">
+                        <i class="ri-moon-line" id="themeIcon"></i>
+                    </button>
+                    <div class="logo-area">
+                        <span class="logo"><i class="ri-zzz-fill"></i></span>
+                    </div>
+                </div>
+            </header>
+
+            <nav class="nav" id="nav" aria-hidden="true">
+                <div class="nav-inner" id="navInner">
+                    <button class="nav-category" data-menu="about" aria-current="true">
+                        <span class="cat-icon"><i class="ri-user-line"></i></span>
+                        <span class="cat-name">ABOUT</span>
+                    </button>
+                    <button class="nav-category" data-menu="skills">
+                        <span class="cat-icon"><i class="ri-code-s-slash-line"></i></span>
+                        <span class="cat-name">SKILLS</span>
+                    </button>
+                    <button class="nav-category" data-menu="projects">
+                        <span class="cat-icon"><i class="ri-artboard-2-line"></i></span>
+                        <span class="cat-name">PROJECTS</span>
+                    </button>
+                    <button class="nav-category" data-menu="contact">
+                        <span class="cat-icon"><i class="ri-mail-line"></i></span>
+                        <span class="cat-name">CONTACT</span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="profile-section">
+                <div class="profile-frame">
+                    <span class="corner corner-tl" aria-hidden="true"></span>
+                    <span class="corner corner-tr" aria-hidden="true"></span>
+                    <span class="corner corner-bl" aria-hidden="true"></span>
+                    <span class="corner corner-br" aria-hidden="true"></span>
+                    <img class="profile-img" id="profileImg" alt="profile" src="https://avatars.githubusercontent.com/u/0?v=4" />
+                    <span class="scan-sweep" aria-hidden="true"></span>
+                </div>
+
+                <h1 class="name" id="displayName">ItsHerious</h1>
+                <p class="bio" id="displayBio">
+                    <span id="displayBioText">Just me, making things I'm proud of.</span><span class="cursor" id="bioCursor" aria-hidden="true"></span>
+                </p>
+
+                <div class="meta-strip" id="metaStrip">
+                    <span class="meta-chip"><i class="ri-briefcase-4-line"></i> <span id="metaRole">Developer</span></span>
+                    <span class="meta-chip"><i class="ri-map-pin-line"></i> <span id="metaLocation">Earth</span></span>
+                    <span class="meta-chip status-chip"><span class="status-dot" id="statusDot"></span> <span id="metaStatus">Available</span></span>
+                </div>
+            </div>
+
+            <main class="content-panel" id="dynamicPanel">
+                <div id="mainContent">
+                    <div class="about-text panel" id="aboutContent" role="tabpanel">
+                        <p>Xin chào — mình là <strong>Tên của bạn</strong>, nhưng bạn có thể gọi mình là <strong>ItsHerious</strong>.</p>
+                        <p>Viết một hoặc hai câu về việc bạn làm và bạn giỏi ở lĩnh vực nào.</p>
+                        <p>Thêm một dòng về sở thích, mối quan tâm, hoặc điều bạn làm lúc rảnh rỗi.</p>
+                        <p>Kết thúc bằng điều thúc đẩy bạn, hoặc điều bạn đang thực hiện.</p>
+                    </div>
+
+                    <div class="skills-grid panel is-hidden" id="skillsContent" role="tabpanel"></div>
+
+                    <div class="projects-grid panel is-hidden" id="projectsContent" role="tabpanel"></div>
+
+                    <div class="contact-sections panel is-hidden" id="contactContent" role="tabpanel"></div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <span>◼ Made with <i class="ri-heart-fill"></i> by <span style="color: var(--accent);" id="footerName">ItsHerious</span> ◼</span>
+                <span class="footer-year" id="footerYear"></span>
+            </footer>
+        </div>
+
+        <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+        <script src="assets/js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+        <script src="assets/js/motion.js"></script>
+    </body>
+</html>

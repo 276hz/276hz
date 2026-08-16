@@ -1,0 +1,77 @@
+{
+    "meta": {
+        "siteTitle": "ItsHerious",
+        "siteDescription": "ItsHerious — just me, making things I'm proud of.",
+        "keywords": ["itsherious", "portfolio", "developer", "personal website"],
+        "siteUrl": "https://itsherious.github.io",
+        "themeColor": "#ff2ec4",
+        "language": "vi"
+    },
+
+    "profile": {
+        "name": "ItsHerious",
+        "alternateName": "Your Full Name",
+        "avatar": "https://avatars.githubusercontent.com/u/0?v=4",
+        "tagline": "Just me, making things I'm proud of.",
+        "role": "Developer",
+        "location": "Earth",
+        "status": "Available"
+    },
+
+    "about": [
+        "Xin chào — mình là **Tên của bạn**, nhưng bạn có thể gọi mình là **ItsHerious**.",
+        "Viết một hoặc hai câu về việc bạn làm và bạn giỏi ở lĩnh vực nào.",
+        "Thêm một dòng về sở thích, mối quan tâm, hoặc điều bạn làm lúc rảnh rỗi.",
+        "Kết thúc bằng điều thúc đẩy bạn, hoặc điều bạn đang thực hiện."
+    ],
+
+    "skills": [
+        { "name": "JavaScript", "icon": "ri-javascript-line" },
+        { "name": "HTML5", "icon": "ri-html5-line" },
+        { "name": "CSS3", "icon": "ri-css3-line" },
+        { "name": "Node.js", "icon": "ri-node-tree" },
+        { "name": "Python", "icon": "ri-code-s-slash-line" },
+        { "name": "Git", "icon": "ri-git-branch-line" },
+        { "name": "Figma", "icon": "ri-figma-line" },
+        { "name": "Database", "icon": "ri-database-2-line" }
+    ],
+
+    "projects": [
+        {
+            "name": "Project One",
+            "description": "A short description of what this project does and why it matters.",
+            "url": "https://github.com/yourusername/project-one",
+            "icon": "ri-code-box-line",
+            "tags": ["JavaScript", "Bot"]
+        },
+        {
+            "name": "Project Two",
+            "description": "A short description of what this project does and why it matters.",
+            "url": "https://your-project-two.example.com",
+            "icon": "ri-rocket-line",
+            "tags": ["Web App"]
+        }
+    ],
+
+    "social": [
+        { "platform": "GitHub", "url": "https://github.com/yourusername", "icon": "ri-github-fill" },
+        { "platform": "Instagram", "url": "https://instagram.com/yourusername", "icon": "ri-instagram-fill" },
+        { "platform": "X / Twitter", "url": "https://x.com/yourusername", "icon": "ri-twitter-x-fill" },
+        { "platform": "LinkedIn", "url": "https://linkedin.com/in/yourusername", "icon": "ri-linkedin-fill" },
+        { "platform": "Threads", "url": "https://threads.net/yourusername", "icon": "ri-threads-fill" },
+        { "platform": "TikTok", "url": "https://tiktok.com/@yourusername", "icon": "ri-tiktok-fill" },
+        { "platform": "YouTube", "url": "https://youtube.com/@yourusername", "icon": "ri-youtube-fill" }
+    ],
+
+    "donations": [
+        { "platform": "PayPal", "url": "https://paypal.me/yourusername", "icon": "ri-paypal-fill" },
+        { "platform": "Ko-fi", "url": "https://ko-fi.com/yourusername", "icon": "ri-cup-fill" },
+        { "platform": "Saweria", "url": "https://saweria.co/yourusername", "icon": "ri-heart-fill" },
+        { "platform": "Trakteer", "url": "https://trakteer.id/yourusername", "icon": "ri-heart-fill" }
+    ],
+
+    "contact": [
+        { "platform": "Email", "url": "mailto:you@example.com", "icon": "ri-mail-fill", "copyValue": "you@example.com" },
+        { "platform": "Telegram", "url": "https://t.me/yourusername", "icon": "ri-telegram-fill" }
+    ]
+}
